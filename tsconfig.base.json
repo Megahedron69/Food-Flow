@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["apps/web/src/*"],
+      "@foodflow/api-contracts": ["packages/api-contracts/src/index.ts"],
+      "@foodflow/api-contracts/*": ["packages/api-contracts/src/*"],
+      "@foodflow/lib": ["packages/lib/src/index.ts"],
+      "@foodflow/lib/*": ["packages/lib/src/*"],
+      "@foodflow/types": ["packages/types/src/index.ts"],
+      "@foodflow/types/*": ["packages/types/src/*"],
+      "@foodflow/ui": ["packages/ui/src/index.ts"],
+      "@foodflow/ui/*": ["packages/ui/src/*"]
+    }
+  }
+}

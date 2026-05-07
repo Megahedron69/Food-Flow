@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "./node_modules/.bin/context7-mcp",
+      "args": [],
+      "env": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      }
+    },
+    "filesystem": {
+      "command": "./node_modules/.bin/mcp-server-filesystem",
+      "args": ["/Users/kartic/SourceCode/fullStack/Food-Flow"]
+    },
+    "postgres": {
+      "command": "./node_modules/.bin/mcp-server-postgres",
+      "args": ["${SUPABASE_DB_URL}"]
+    },
+    "shadcn": {
+      "command": "./node_modules/.bin/shadcn",
+      "args": ["mcp", "--cwd", "/Users/kartic/SourceCode/fullStack/Food-Flow"]
+    }
+  }
+}

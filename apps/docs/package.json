@@ -1,0 +1,13 @@
+{
+  "name": "@foodflow/docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo \"Docs app not implemented yet\"",
+    "dev": "echo \"Docs app not implemented yet\"",
+    "lint": "echo \"Docs app not implemented yet\"",
+    "typecheck": "echo \"Docs app not implemented yet\"",
+    "test": "vitest run --passWithNoTests"
+  }
+}

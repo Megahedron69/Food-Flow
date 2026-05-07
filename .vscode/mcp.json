@@ -1,0 +1,31 @@
+{
+  "servers": {
+    "context7": {
+      "type": "stdio",
+      "command": "./node_modules/.bin/context7-mcp",
+      "args": [],
+      "env": {
+        "CONTEXT7_API_KEY": "${env:CONTEXT7_API_KEY}"
+      }
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "./node_modules/.bin/mcp-server-filesystem",
+      "args": ["/Users/kartic/SourceCode/fullStack/Food-Flow"]
+    },
+    "postgres": {
+      "type": "stdio",
+      "command": "./node_modules/.bin/mcp-server-postgres",
+      "args": ["${env:SUPABASE_DB_URL}"]
+    },
+    "shadcn": {
+      "type": "stdio",
+      "command": "./node_modules/.bin/shadcn",
+      "args": ["mcp", "--cwd", "/Users/kartic/SourceCode/fullStack/Food-Flow"]
+    },
+    "supabase": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?project_ref=jzkwpypwtaoupxjuvdtg&features=docs%2Caccount%2Cdatabase%2Cdebugging%2Cdevelopment%2Cfunctions%2Cbranching%2Cstorage"
+    }
+  }
+}

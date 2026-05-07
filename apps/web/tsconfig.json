@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["vite/client", "vitest/globals"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@foodflow/api-contracts": ["../../packages/api-contracts/src/index.ts"],
+      "@foodflow/lib": ["../../packages/lib/src/index.ts"],
+      "@foodflow/types": ["../../packages/types/src/index.ts"],
+      "@foodflow/ui": ["../../packages/ui/src/index.ts"]
+    }
+  },
+  "include": ["src", "vite.config.ts", "tailwind.config.ts", "postcss.config.cjs"]
+}
