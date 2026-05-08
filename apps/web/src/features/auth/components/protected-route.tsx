@@ -4,7 +4,7 @@ import { useAuth } from "@/features/auth/providers/auth-provider";
 
 export function ProtectedRoute({ children }: PropsWithChildren) {
   const location = useLocation();
-  const { isLoading, session } = useAuth();
+  const { isLoading, session, profile } = useAuth();
 
   if (isLoading) {
     return (
@@ -15,7 +15,15 @@ export function ProtectedRoute({ children }: PropsWithChildren) {
   }
 
   if (!session) {
-    return <Navigate to="/sign-in" replace state={{ from: location }} />;
+    return <Navigate to="/login" replace state={{ from: location }} />;
+  }
+
+  if (!profile) {
+    return (
+      <div className="grid min-h-screen place-items-center text-sm text-muted-foreground">
+        Preparing workspace
+      </div>
+    );
   }
 
   return children;

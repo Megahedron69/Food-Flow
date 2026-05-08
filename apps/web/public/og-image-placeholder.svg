@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="FoodFlow social preview">
+  <defs>
+    <linearGradient id="og-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="og-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og-bg)"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#0b1220" stroke="#334155"/>
+  <rect x="116" y="128" width="560" height="48" rx="12" fill="#1e293b"/>
+  <rect x="116" y="196" width="480" height="24" rx="12" fill="#1e293b"/>
+  <rect x="116" y="252" width="220" height="54" rx="14" fill="url(#og-accent)"/>
+  <rect x="724" y="128" width="360" height="340" rx="20" fill="#111827" stroke="#334155"/>
+  <rect x="756" y="168" width="140" height="14" rx="7" fill="#334155"/>
+  <rect x="756" y="206" width="296" height="80" rx="12" fill="#1f2937"/>
+  <rect x="756" y="302" width="296" height="80" rx="12" fill="#1f2937"/>
+  <text x="116" y="378" fill="#e2e8f0" font-size="56" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="700">FoodFlow</text>
+  <text x="116" y="426" fill="#94a3b8" font-size="30" font-family="Source Sans 3, Arial, sans-serif">Cloud-native restaurant POS platform</text>
+</svg>

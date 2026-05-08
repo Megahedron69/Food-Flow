@@ -1,22 +1,22 @@
 export const appNavigation = [
   {
     label: "Dashboard",
-    href: "/dashboard",
+    href: "/app/dashboard",
     icon: "dashboard"
   },
   {
     label: "Outlets",
-    href: "/outlets",
+    href: "/app/outlets",
     icon: "outlets"
   },
   {
     label: "Reports",
-    href: "/reports",
+    href: "/app/reports",
     icon: "reports"
   },
   {
     label: "Settings",
-    href: "/settings",
+    href: "/app/settings",
     icon: "settings"
   }
 ] as const;
